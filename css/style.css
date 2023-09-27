@@ -1,7 +1,9 @@
-
+:root {
+    --dark-blue: #051E34;
+    --blue: #1B72E8;
+}
 
 .app-main {
-    background-color: aqua;
     height: 100vh;
 }
 
@@ -16,11 +18,11 @@
 
 .app-sidebar {
     width: 70px;
-    background-color: violet;
+    background: url(../img/sidebar-bg.png) var(--dark-blue);
 }
 
 .app-contents-header {
-    background-color: cornflowerblue;
+    background-color: var(--blue);
 }
 
 .tablet-logo {
@@ -51,11 +53,39 @@
     box-shadow: 0 0 0 0.025em rgba(60, 107, 196, 0.301);
 }
 
+.sidebar-menu {
+    height: 100%;
+}
+
+.sidebar-menu i {
+    font-size: 20px;
+    width: 35px;
+    text-align: center;
+}
+
+.sidebar-menu li {
+    width: 100%;
+}
+
+.sidebar-menu a {
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    transition: 200ms all;
+}
+
+.sidebar-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-menu-text {
+    display: none;
+}
+
 @media screen and (min-width: 768px)  {
 
     .app-sidebar {
         width: 150px;
-        background-color: violet;
     }
 
     .tablet-logo {
@@ -68,6 +98,16 @@
 
     .app-nav a:not(:last-child) {
         display: block;
+    }
+
+    .sidebar-menu a {
+        text-align: left;
+        padding-left: 12px;
+    }
+
+    .sidebar-menu-text {
+        display: inline;
+        padding-left: 6px;
     }
 
 }
