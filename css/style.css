@@ -1,0 +1,17 @@
+.app-main {
+    background-color: aqua;
+    height: 100vh;
+}
+
+.app-nav {
+    background-color: tomato;
+}
+
+.app-body {
+    background-color: blueviolet;
+}
+
+.app-sidebar {
+    background-color: violet;
+}
+
