@@ -4,6 +4,7 @@
 }
 
 .app-nav {
+    height: 70px;
     background-color: tomato;
 }
 
@@ -12,6 +13,24 @@
 }
 
 .app-sidebar {
+    width: 70px;
     background-color: violet;
 }
 
+
+@media screen and (min-width: 768px)  {
+
+    .app-sidebar {
+        width: 150px;
+        background-color: violet;
+    }
+
+}
+
+::-webkit-scrollbar {
+    background-color:steelblue;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
