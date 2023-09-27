@@ -17,12 +17,49 @@
     background-color: violet;
 }
 
+.app-contents-header {
+    background-color: cornflowerblue;
+}
+
+.tablet-logo {
+    display: none;
+}
+
+.mobile-logo, .tablet-logo {
+    max-height: 35px;
+}
+
+.input-group > * {
+    background-color: rgb(183, 240, 78);    
+    border-radius: 10px;
+    border: none;
+}
+
+.app-nav i:not(:last-child) {
+    display: none;
+}
+
+.app-nav i:last-child {
+    color: rgb(52, 66, 255);
+}
 
 @media screen and (min-width: 768px)  {
 
     .app-sidebar {
         width: 150px;
         background-color: violet;
+    }
+
+    .tablet-logo {
+        display: block;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .app-nav i:not(:last-child) {
+        display: block;
     }
 
 }
@@ -33,4 +70,11 @@
 
 ::-webkit-scrollbar-thumb {
     background-color: blue;
+}
+
+
+/* Debug */
+
+.debug .col {
+    border: 2px solid white;
 }
