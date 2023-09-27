@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="debug">
+<body class="!debug">
 
     <!-- Main App Wrapper -->
     <main class="app-main d-flex flex-column overflow-hidden">
@@ -22,28 +22,31 @@
 
             <div class="container-fluid">
 
-                <div class="row align-items-center py-3">
+                <div class="row align-items-center flex-nowrap py-3">
 
                     <div class="col-auto">
-                        <img src="./img/logo.svg" class="tablet-logo" alt="">
-                        <img src="./img/mobile-logo.png" class="mobile-logo rounded-circle" alt="">
+                        <a href="">
+                            <img src="./img/logo.svg" class="tablet-logo" alt="">
+                            <img src="./img/mobile-logo.png" class="mobile-logo rounded-circle" alt="">
+                        </a>
                     </div>
 
-                    <div class="col-auto flex-grow-1">
+                    <div class="col flex-grow-1">
                         <form>
                             <div class="input-group">
-                                <button class="btn btn-light" type="button" id="button-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                <input type="search" name="nav-search" id="nav-search" class="form-control" placeholder="Search here">
+                                <button class="btn btn-light" type="button" id="button-addon1"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <input type="search" name="nav-search" id="nav-search" class="form-control"
+                                    placeholder="Search here">
                             </div>
-
                         </form>
                     </div>
 
                     <div class="col-auto d-flex column-gap-3">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <i class="fa-solid fa-circle-question"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                        <i class="fa-solid fa-bell"></i>
+                        <a href=""><i class="fa-solid fa-list-ul"></i></a>
+                        <a href=""><i class="fa-solid fa-circle-question"></i></a>
+                        <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        <a href=""><i class="fa-solid fa-bell"></i></a>
                     </div>
 
 

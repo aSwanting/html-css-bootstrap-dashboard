@@ -35,12 +35,13 @@
     border: none;
 }
 
-.app-nav i:not(:last-child) {
+.app-nav a:not(:last-child) {
     display: none;
+    color: currentColor;
 }
 
-.app-nav i:last-child {
-    color: rgb(52, 66, 255);
+.app-nav a:last-child {
+    color: rgb(167, 242, 255);
 }
 
 @media screen and (min-width: 768px)  {
@@ -58,7 +59,7 @@
         display: none;
     }
 
-    .app-nav i:not(:last-child) {
+    .app-nav a:not(:last-child) {
         display: block;
     }
 
