@@ -1,3 +1,5 @@
+
+
 .app-main {
     background-color: aqua;
     height: 100vh;
@@ -5,7 +7,7 @@
 
 .app-nav {
     height: 70px;
-    background-color: tomato;
+    background-color: rgb(255, 255, 255);
 }
 
 .app-body {
@@ -30,8 +32,8 @@
 }
 
 .input-group > * {
-    background-color: rgb(183, 240, 78);    
-    border-radius: 10px;
+    background-color: rgb(234, 242, 247);    
+    border-radius: 12px;
     border: none;
 }
 
@@ -41,7 +43,12 @@
 }
 
 .app-nav a:last-child {
-    color: rgb(167, 242, 255);
+    color: rgb(255, 112, 46);
+}
+
+.form-control:focus {
+    background-color: rgb(234, 242, 247);    
+    box-shadow: 0 0 0 0.025em rgba(60, 107, 196, 0.301);
 }
 
 @media screen and (min-width: 768px)  {
@@ -66,11 +73,13 @@
 }
 
 ::-webkit-scrollbar {
-    background-color:steelblue;
+    background-color:rgb(255, 255, 255);
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: blue;
+    background-color: rgb(212, 212, 212);
+    border-radius: 20px;
 }
 
 
