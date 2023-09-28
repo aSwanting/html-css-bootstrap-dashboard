@@ -1,7 +1,11 @@
+/* variables */
+
 :root {
     --dark-blue: #051E34;
     --blue: #1B72E8;
 }
+
+/* main layout */
 
 .app-main {
     height: 100vh;
@@ -12,14 +16,12 @@
     background-color: rgb(255, 255, 255);
 }
 
-
-
 .app-sidebar {
     width: 70px;
     background: url(../img/sidebar-bg.png) var(--dark-blue);
 }
 
-
+/* app header */
 
 .app-contents-header {
     background-color: var(--blue);
@@ -66,6 +68,8 @@
     box-shadow: 0 0 0 0.025em rgba(60, 107, 196, 0.301);
 }
 
+/* app sidebar */
+
 .sidebar-menu {
     height: 100%;
 }
@@ -95,6 +99,8 @@
     display: none;
 }
 
+/* new student offcanvas */
+
 .offcanvas {
     background-image: url(../img/hello.png);
     background-repeat: no-repeat;
@@ -105,6 +111,8 @@
 .offcanvas.offcanvas-end {
     width: 100%;
 }
+
+/* app internal header */
 
 .badge {
     font-size: 0.8rem;
@@ -129,10 +137,13 @@
     display: none;
 }
 
+/* app internal body */
+
 .app-contents-body .card {
     margin-top: 30px
 }
 
+/* lessons table */
 
 .lessons-table {
     overflow: hidden;
@@ -147,8 +158,6 @@
     margin-right: 4px;
 }
 
-
-
 .lessons-table :is(th:not(:first-child), td:not(:first-child)) {
     text-align: center;
 }
@@ -156,6 +165,8 @@
 .lessons-table :is(th:nth-child(n+2):nth-child(-n+3), td:nth-child(n+2):nth-child(-n+3)) {
     display: none;
 }
+
+
 
 /* TODO-LIST TEXT SCROLL ANIMATION */
 @media screen and (max-width: 460px) {
@@ -197,6 +208,9 @@
     }
 
 }
+
+
+/* media queries */
 
 
 @media screen and (min-width: 992px) {
@@ -254,6 +268,8 @@
 
 }
 
+/* scrollbar formatting */
+
 ::-webkit-scrollbar {
     background-color: rgb(230, 230, 230);
     width: 6px;
@@ -263,11 +279,4 @@
 ::-webkit-scrollbar-thumb {
     background-color: rgb(133, 133, 133);
     background-image: url(../img/sidebar-bg.png);
-}
-
-
-/* Debug */
-
-.debug .col {
-    border: 2px solid white;
 }

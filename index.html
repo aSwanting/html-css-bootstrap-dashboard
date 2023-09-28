@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="!debug">
+<body>
 
     <!-- Main App Wrapper -->
     <main class="app-main d-flex flex-column">
@@ -49,6 +49,7 @@
                         <a class="mobile-hidden" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                         <a href="#" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell"></i></a>
 
+                        <!-- Bell Dropdown -->
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Profilo</a></li>
                             <li><a class="dropdown-item" href="#">Fatturazione</a></li>
@@ -105,6 +106,8 @@
             <!-- App Contents -->
             <div class="app-contents overflow-auto flex-grow-1">
 
+
+                <!-- App Internal Header -->
                 <div class="app-contents-header py-3">
 
                     <div class="container-fluid text-white fw-semibold">
@@ -112,7 +115,6 @@
                         <div class="row flex-column flex-sm-row row-gap-4">
 
                             <div class="col">
-
                                 <h3 class="text-nowrap">Boolean <span class="badge rounded-pill">Piano blaze</span></h3>
                                 <div class="d-flex align-items-center gap-2">
                                     <span class="badge rounded-pill">3 app</span>
@@ -140,6 +142,7 @@
                                         <i class="fa-solid fa-plus"></i>
                                     </button>
 
+                                    <!-- New Student offcanvas section -->
                                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                                         aria-labelledby="offcanvasRightLabel">
 
@@ -227,7 +230,7 @@
                                                             id="invalidCheck" required>
                                                         <label class="form-check-label" for="invalidCheck">
                                                             Seleziona per proseguire
-                                                        </label>                                        
+                                                        </label>
                                                     </div>
                                                 </div>
 
@@ -240,6 +243,7 @@
                                         </div>
 
                                     </div>
+                                    <!-- offcanvas end -->
 
                                 </div>
                             </div>
@@ -251,16 +255,20 @@
 
                 </div>
 
+                <!-- App Internal Body -->
                 <div class="app-contents-body">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-7 ">
+
+                                <!-- Lessons Table Card -->
                                 <div class="card ">
                                     <div class="card-header">
                                         <h3>Prossime classi</h3>
                                     </div>
                                     <div class="card-body overflow-auto">
-                                        <table class="lessons-table table table-hover fw-semibold align-middle text-nowrap">
+                                        <table
+                                            class="lessons-table table table-hover fw-semibold align-middle text-nowrap">
                                             <thead>
                                                 <tr>
                                                     <th scope="col">Nome</th>
@@ -445,6 +453,7 @@
                                     </div>
                                 </div>
 
+                                <!-- FAQ Card -->
                                 <div class="card">
                                     <div class="card-header">
                                         <h3>F.A.Q.</h3>
@@ -498,6 +507,8 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Todo List Card -->
                             <div class="col ">
                                 <div class="card">
                                     <div class="card-header">
@@ -529,6 +540,7 @@
                                     </div>
                                 </div>
 
+                                <!-- Stats Card -->
                                 <div class="card">
                                     <div class="card-body">
                                         <ul class="list-group">
