@@ -30,16 +30,29 @@
     font-size: 14px;
 }
 
+.app-contents-header .col:nth-child(1) {
+    flex-grow: 3;
+}
+
+.app-contents-header .col:nth-child(2) {
+    flex-grow: 2;
+}
+
+.app-contents-header .col:nth-child(3) {
+    flex-grow: 1;
+}
+
 .tablet-logo {
     display: none;
 }
 
-.mobile-logo, .tablet-logo {
+.mobile-logo,
+.tablet-logo {
     max-height: 35px;
 }
 
-.input-group > * {
-    background-color: rgb(234, 242, 247);    
+.input-group>* {
+    background-color: rgb(234, 242, 247);
     border-radius: 12px;
     border: none;
 }
@@ -53,7 +66,7 @@
 }
 
 .form-control:focus {
-    background-color: rgb(234, 242, 247);    
+    background-color: rgb(234, 242, 247);
     box-shadow: 0 0 0 0.025em rgba(60, 107, 196, 0.301);
 }
 
@@ -114,7 +127,7 @@
     display: none;
 }
 
-@media screen and (min-width: 992px)  {
+@media screen and (min-width: 992px) {
 
     .app-sidebar {
         width: 150px;
@@ -150,7 +163,7 @@
 }
 
 ::-webkit-scrollbar {
-    background-color:rgba(150, 129, 129, 0.11);
+    background-color: rgba(150, 129, 129, 0.11);
     width: 10px;
 }
 
