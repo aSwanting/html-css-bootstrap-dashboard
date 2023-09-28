@@ -13,7 +13,7 @@
 }
 
 .app-body {
-    background-color: blueviolet;
+    background-color: rgb(146, 134, 134);
 }
 
 .app-sidebar {
@@ -29,11 +29,11 @@
 }
 
 .app-contents-header .col:nth-child(1) {
-    flex-grow: 3;
+    flex-grow: 2;
 }
 
 .app-contents-header .col:nth-child(2) {
-    flex-grow: 2;
+    flex-grow: 3;
 }
 
 .app-contents-header .col:nth-child(3) {
@@ -198,6 +198,18 @@
 
     .plus-sign {
         display: none;
+    }
+
+    .app-contents-header .col:nth-child(1) {
+        flex-grow: 3;
+    }
+    
+    .app-contents-header .col:nth-child(2) {
+        flex-grow: 2;
+    }
+    
+    .app-contents-header .col:nth-child(3) {
+        flex-grow: 1;
     }
 
 }
