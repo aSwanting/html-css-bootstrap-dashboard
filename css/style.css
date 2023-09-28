@@ -12,9 +12,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-.app-body {
-    background-color: rgb(146, 134, 134);
-}
+
 
 .app-sidebar {
     width: 70px;
@@ -125,6 +123,34 @@
     display: none;
 }
 
+.app-contents-body .card {
+    margin-top: 30px
+}
+
+
+.lessons-table {
+    table-layout: fixed;
+}
+
+
+.lessons-table :is(th:not(:first-child), td:not(:first-child)) {
+    text-align: center;
+}
+
+.lessons-table :is(th:nth-child(n+2):nth-child(-n+3), td:nth-child(n+2):nth-child(-n+3)) {
+    display: none;
+}
+
+
+.table img {
+    max-width: 30px;
+    margin-right: 4px;
+}
+
+.table .btn {
+    font-size: 14px;
+}
+
 /* TODO-LIST TEXT SCROLL ANIMATION */
 @media screen and (max-width: 460px) {
 
@@ -132,7 +158,7 @@
         position: relative;
         z-index: 1;
     }
-    
+
     .todo-list .list-group-item::before {
         content: '';
         width: 40px;
@@ -203,25 +229,33 @@
     .app-contents-header .col:nth-child(1) {
         flex-grow: 3;
     }
-    
+
     .app-contents-header .col:nth-child(2) {
         flex-grow: 2;
     }
-    
+
     .app-contents-header .col:nth-child(3) {
         flex-grow: 1;
+    }
+
+    .lessons-table th:first-child {
+        width: 40%;
+    }
+
+    .lessons-table :is(th:nth-child(n+2):nth-child(-n+3), td:nth-child(n+2):nth-child(-n+3)) {
+        display: table-cell;
     }
 
 }
 
 ::-webkit-scrollbar {
-    background-color: rgba(150, 129, 129, 0.11);
-    width: 10px;
+    background-color: rgb(230, 230, 230);
+    width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(131, 172, 219);
-    border-radius: 20px;
+    background-color: rgb(133, 133, 133);
+    background-image: url(../img/sidebar-bg.png);
 }
 
 
