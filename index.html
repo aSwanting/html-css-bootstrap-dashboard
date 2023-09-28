@@ -54,7 +54,7 @@
                             <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
-                        
+
                     </div>
 
                 </div>
@@ -144,9 +144,96 @@
                                         aria-labelledby="offcanvasRightLabel">
 
                                         <div class="offcanvas-header">
-                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Hi</h5>
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo
+                                                studente</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                                 aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="offcancas-body p-3">
+                                            <form class="d-flex flex-column gap-3">
+
+                                                <div>
+                                                    <label for="name">Nome</label>
+                                                    <input class="form-control" id="name" type="text">
+                                                </div>
+
+                                                <div>
+                                                    <label for="surname">Cognome</label>
+                                                    <input class="form-control" id="surname" type="text">
+                                                </div>
+
+                                                <div>
+                                                    <label for="email-primary">Email</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">@</span>
+                                                        <input class="form-control" id="email-primary" type="email">
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label for="password-primary">Password</label>
+                                                    <input class="form-control" id="password-primary" type="password">
+                                                </div>
+
+                                                <div>
+                                                    <label for="email-primary">Email</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">@</span>
+                                                        <input class="form-control" id="email-secondary" type="email">
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label for="password-secondary">Password</label>
+                                                    <input class="form-control" id="password-secondary" type="password">
+                                                </div>
+
+                                                <div>
+                                                    <label for="adress">Indirizzo</label>
+                                                    <input class="form-control" id="adress" type="text">
+                                                </div>
+
+                                                <div>
+                                                    <label for="city">Città</label>
+                                                    <input class="form-control" id="city" type="text">
+                                                </div>
+
+                                                <div>
+                                                    <label for="state">Stato</label>
+                                                    <select class="form-select" id="state">
+                                                        <option selected></option>
+                                                        <option value="alive">Vivo</option>
+                                                        <option value="dead">Morto</option>
+                                                    </select>
+                                                </div>
+
+                                                <div>
+                                                    <label for="zip-code">CAP</label>
+                                                    <input class="form-control" id="zip-code" type="text">
+                                                </div>
+
+                                                <div>
+                                                    <label for="picture">Foto</label>
+                                                    <input class="form-control" id="picture" type="file">
+                                                </div>
+
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="invalidCheck" required>
+                                                        <label class="form-check-label" for="invalidCheck">
+                                                            Seleziona per proseguire
+                                                        </label>                                        
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <button class="btn btn-primary" type="submit">Salva</button>
+                                                    <button class="btn btn-warning" type="reset">Svuota</button>
+                                                </div>
+
+                                            </form>
                                         </div>
 
                                     </div>
@@ -360,7 +447,7 @@
                                         <h3>F.A.Q.</h3>
                                     </div>
                                     <div class="card-body">
-                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion accordion-flush" id="faq-accordion">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
                                                     <button class="accordion-button collapsed fw-semibold" type="button"
@@ -371,7 +458,7 @@
                                                 </h2>
                                                 <div id="flush-collapseOne"
                                                     class="accordion-collapse collapse fw-semibold"
-                                                    data-bs-parent="#accordionFlushExample">
+                                                    data-bs-parent="#faq-accordion">
                                                     <div class="accordion-body">Clicca sul + in alto nella sezione blu.
                                                     </div>
                                                 </div>
@@ -386,7 +473,7 @@
                                                 </h2>
                                                 <div id="flush-collapseTwo"
                                                     class="accordion-collapse collapse fw-semibold"
-                                                    data-bs-parent="#accordionFlushExample">
+                                                    data-bs-parent="#faq-accordion">
                                                     <div class="accordion-body">Clicca sull'icona della campanella</div>
                                                 </div>
                                             </div>
@@ -400,7 +487,7 @@
                                                 </h2>
                                                 <div id="flush-collapseThree"
                                                     class="accordion-collapse collapse fw-semibold"
-                                                    data-bs-parent="#accordionFlushExample">
+                                                    data-bs-parent="#faq-accordion">
                                                     <div class="accordion-body">Dipende da chi l'ha sviluppata.</div>
                                                 </div>
                                             </div>

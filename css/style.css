@@ -47,7 +47,7 @@
     max-height: 35px;
 }
 
-.input-group>* {
+.app-nav .input-group>* {
     background-color: rgb(234, 242, 247);
     border-radius: 12px;
     border: none;
@@ -98,6 +98,12 @@
 .offcanvas {
     background-image: url(../img/hello.png);
     background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 150px;
+}
+
+.offcanvas.offcanvas-end {
+    width: 100%;
 }
 
 .badge {
