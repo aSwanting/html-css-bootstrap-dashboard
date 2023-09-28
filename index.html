@@ -44,17 +44,10 @@
 
                     <div class="col-auto d-flex column-gap-3">
 
-                        <a href=""><i class="fa-solid fa-list-ul"></i></a>
-                        <a href=""><i class="fa-solid fa-circle-question"></i></a>
-                        <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
-
-                        <a href="#offcanvasRight" data-bs-toggle="offcanvas" aria-controls="offcanvasRight"><i
-                                class="fa-solid fa-bell"></i></a>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                            aria-labelledby="offcanvasRightLabel">
-                        
-                        
-                        </div>
+                        <a class="mobile-hidden" href="#"><i class="fa-solid fa-list-ul"></i></a>
+                        <a class="mobile-hidden" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                        <a class="mobile-hidden" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
 
                     </div>
 
@@ -97,45 +90,65 @@
                             <span class="sidebar-menu-text">Admin</span>
 
                         </a></li>
-
                 </ul>
-
-
-
-
-
 
             </div>
 
             <!-- App Contents -->
-            <div class="app-contents overflow-auto">
+            <div class="app-contents overflow-auto flex-grow-1">
 
-                <div class="app-contents-header p-5"></div>
+                <div class="app-contents-header py-3">
 
-                <div class="container-fluid p-3">
+                    <div class="container-fluid text-white fw-semibold">
+                        <div class="row flex-column flex-sm-row row-gap-4">
+                            <div class="col flex-grow-3">
 
-                    <div class="text-sample text-white display-5">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Deleniti assumenda nesciunt atque ipsam magnam expedita distinctio nemo dicta omnis
-                        numquam debitis repudiandae, sequi autem suscipit molestiae? Soluta iure magnam, facilis veniam
-                        consequatur impedit laborum, fugiat architecto amet labore modi dolores harum? Voluptatum, nisi?
-                        Alias, magni assumenda. Vero provident fugiat accusamus ab consequuntur iste odio excepturi,
-                        neque suscipit quo. Nemo facilis sit recusandae eos quam praesentium maxime unde laboriosam
-                        sequi nulla. Aut animi obcaecati corrupti similique iste quaerat autem doloremque pariatur,
-                        consequuntur eos placeat, necessitatibus blanditiis? Doloribus dolorum atque, vitae laboriosam
-                        sed cumque aut laborum quas? Quae, nemo quaerat. Amet sapiente odio distinctio in eligendi
-                        impedit iure incidunt. Alias voluptas corrupti mollitia qui voluptate. Quos fugiat itaque, atque
-                        quo odio, omnis architecto ea molestias accusantium impedit tenetur voluptatum. Eligendi nam
-                        nobis dolorum fugiat, explicabo doloribus officiis ipsa autem. Illo, ad. Cupiditate at, eos
-                        dolorem perspiciatis, sapiente laborum quae quisquam consectetur officiis consequuntur corporis
-                        quas libero tempore magnam accusamus modi dignissimos facilis corrupti doloremque enim
-                        reiciendis ut accusantium quasi vitae. Temporibus accusamus optio veniam est iusto dolor amet
-                        provident velit iure, dolorem odit nobis eligendi commodi ut ipsa quos adipisci laboriosam
-                        maxime alias qui voluptatem officia aliquam dolores eius. Accusantium, quam consequuntur?</div>
+                                <h3>Boolean <span class="badge rounded-pill">Piano blaze</span></h3>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="badge rounded-pill">3 app</span>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <span class="plus-sign badge rounded-circle"><i class="fa-solid fa-plus"></i></span>
+                                    <span class="mobile-hidden badge rounded-pill">Boolean mobile app</span>
+                                    <span class="mobile-hidden badge rounded-pill">Boolean web app</span>
+                                    <span class="mobile-hidden badge rounded-pill">Boolean blog app</span>
+                                </div>
+                            </div>
 
-                </div>
+                            <div class="col flex-grow-2">
+                                <p class="m-0">Studenti online negli ultimi 30 minuti</p>
+                                <p class="fw-semibold fs-4 m-0">125</p>
+                            </div>
 
+                            <div class="col order-first order-sm-last">
+
+                                <div class="d-flex align-items-center flex-nowrap gap-2">
+
+                                    <p class="text-nowrap">Nuovo studente</p>
+
+                                    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                        aria-labelledby="offcanvasRightLabel">
+                                 
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Hi</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                          </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+     
             </div>
-        </div>
     </main>
 
 

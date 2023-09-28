@@ -21,8 +21,13 @@
     background: url(../img/sidebar-bg.png) var(--dark-blue);
 }
 
+/* .app-contents {
+    overflow-y: overlay;
+} */
+
 .app-contents-header {
     background-color: var(--blue);
+    font-size: 14px;
 }
 
 .tablet-logo {
@@ -40,7 +45,6 @@
 }
 
 .app-nav a:not(:nth-child(4)) {
-    display: none;
     color: rgb(104, 104, 104);
 }
 
@@ -84,11 +88,33 @@
 
 .offcanvas {
     background-image: url(../img/hello.png);
-    background-repeat:no-repeat;
-
+    background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 768px)  {
+.badge {
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #00000055;
+}
+
+.badge:not(.plus-sign) {
+    padding-bottom: 6px;
+}
+
+.plus-sign {
+    font-size: 12px;
+    width: 22px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+@media screen and (min-width: 992px)  {
 
     .app-sidebar {
         width: 150px;
@@ -102,10 +128,6 @@
         display: none;
     }
 
-    .app-nav a:not(:nth-child(4)) {
-        display: block;
-    }
-
     .sidebar-menu a {
         text-align: left;
         padding-left: 10px;
@@ -116,15 +138,24 @@
         padding-left: 6px;
     }
 
+    .mobile-hidden {
+        display: block;
+    }
+
+
+    .plus-sign {
+        display: none;
+    }
+
 }
 
 ::-webkit-scrollbar {
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(150, 129, 129, 0.11);
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(131, 172, 219);
     border-radius: 20px;
 }
 
