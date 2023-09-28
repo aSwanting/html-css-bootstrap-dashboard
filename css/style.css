@@ -135,8 +135,18 @@
 
 
 .lessons-table {
-    table-layout: fixed;
+    overflow: hidden;
 }
+
+.lessons-table th:nth-child(n+4) {
+    width: 25%;
+}
+
+.lessons-table img {
+    max-width: 25px;
+    margin-right: 4px;
+}
+
 
 
 .lessons-table :is(th:not(:first-child), td:not(:first-child)) {
@@ -145,16 +155,6 @@
 
 .lessons-table :is(th:nth-child(n+2):nth-child(-n+3), td:nth-child(n+2):nth-child(-n+3)) {
     display: none;
-}
-
-
-.table img {
-    max-width: 30px;
-    margin-right: 4px;
-}
-
-.table .btn {
-    font-size: 14px;
 }
 
 /* TODO-LIST TEXT SCROLL ANIMATION */
@@ -244,10 +244,6 @@
         flex-grow: 1;
     }
 
-    .lessons-table th:first-child {
-        width: 40%;
-    }
-
     .lessons-table :is(th:nth-child(n+2):nth-child(-n+3), td:nth-child(n+2):nth-child(-n+3)) {
         display: table-cell;
     }
@@ -261,6 +257,7 @@
 ::-webkit-scrollbar {
     background-color: rgb(230, 230, 230);
     width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
