@@ -21,13 +21,11 @@
     background: url(../img/sidebar-bg.png) var(--dark-blue);
 }
 
-/* .app-contents {
-    overflow-y: overlay;
-} */
+
 
 .app-contents-header {
     background-color: var(--blue);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .app-contents-header .col:nth-child(1) {
@@ -126,6 +124,48 @@
 .mobile-hidden {
     display: none;
 }
+
+/* TODO-LIST TEXT SCROLL ANIMATION */
+@media screen and (max-width: 460px) {
+
+    .todo-list .form-check-input {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .todo-list .list-group-item::before {
+        content: '';
+        width: 40px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .todo-list .list-group-item {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .todo-list .form-check-label:hover {
+        animation: text-scroll 5s linear infinite;
+    }
+
+    @keyframes text-scroll {
+        0% {
+            transform: translateX(0px);
+        }
+
+        100% {
+            transform: translateX(-200px);
+        }
+
+    }
+
+}
+
 
 @media screen and (min-width: 992px) {
 
